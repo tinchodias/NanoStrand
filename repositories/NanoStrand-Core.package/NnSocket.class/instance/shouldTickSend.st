@@ -1,0 +1,4 @@
+testing
+shouldTickSend
+	^self isValid
+	

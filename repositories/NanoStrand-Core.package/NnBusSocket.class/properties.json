@@ -1,0 +1,14 @@
+{
+	"category" : "NanoStrand-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "NnBusSocket",
+	"pools" : [
+		 ],
+	"super" : "NnSocket",
+	"type" : "normal" }

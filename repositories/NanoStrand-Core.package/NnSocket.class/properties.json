@@ -1,0 +1,23 @@
+{
+	"category" : "NanoStrand-Core",
+	"classinstvars" : [
+		"logger" ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"ffi",
+		"descriptor",
+		"endpoints",
+		"settings",
+		"tickMilliseconds",
+		"sendProcessPriority",
+		"receiveProcessPriority",
+		"sendReadyBlock",
+		"receiveReadyBlock",
+		"sendReceiveReadyBlock" ],
+	"name" : "NnSocket",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

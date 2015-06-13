@@ -1,0 +1,14 @@
+{
+	"category" : "NanoStrand-Pharo-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "NnPhPortableUtil",
+	"pools" : [
+		 ],
+	"super" : "NnPortableUtil",
+	"type" : "normal" }

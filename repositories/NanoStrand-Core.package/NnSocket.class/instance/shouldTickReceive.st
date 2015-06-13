@@ -1,0 +1,4 @@
+testing
+shouldTickReceive
+	^self isValid
+	

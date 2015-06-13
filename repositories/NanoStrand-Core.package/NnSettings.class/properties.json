@@ -1,0 +1,14 @@
+{
+	"category" : "NanoStrand-Core",
+	"classinstvars" : [
+		"default" ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"settingsDict" ],
+	"name" : "NnSettings",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

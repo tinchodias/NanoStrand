@@ -1,0 +1,11 @@
+{
+	"class" : {
+		"default" : "MasashiUmezawa 5/18/2015 21:47",
+		"dialectSpecificClass" : "MasashiUmezawa 5/18/2015 21:46",
+		"dialectSpecificClass:" : "MasashiUmezawa 5/18/2015 21:46",
+		"initialize" : "MasashiUmezawa 5/18/2015 21:46" },
+	"instance" : {
+		"constants" : "MasashiUmezawa 5/18/2015 22:28",
+		"ffi" : "MasashiUmezawa 5/18/2015 21:59",
+		"ffiClass" : "MasashiUmezawa 5/18/2015 21:59",
+		"releaseAllSockets" : "MasashiUmezawa 6/7/2015 22:09" } }

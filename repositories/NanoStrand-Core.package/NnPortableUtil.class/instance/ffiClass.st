@@ -1,0 +1,3 @@
+factory
+ffiClass
+	^self subclassResponsibility  

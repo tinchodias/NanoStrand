@@ -1,0 +1,14 @@
+{
+	"category" : "NanoStrand-Core",
+	"classinstvars" : [
+		"isDebugging" ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "NnLogger",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

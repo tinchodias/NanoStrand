@@ -1,0 +1,19 @@
+{
+	"category" : "NanoStrand-NativeBoost-FFI",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		"IntHolderType",
+		"IntSize",
+		"PollDescriptorArrayType",
+		"SizeHolderType",
+		"StringHolderType",
+		"TypeMap" ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "NnNbNanoMessageFFI",
+	"pools" : [
+		"NnNbNanoMessageConstants" ],
+	"super" : "Object",
+	"type" : "normal" }

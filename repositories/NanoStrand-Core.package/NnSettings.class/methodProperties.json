@@ -1,0 +1,21 @@
+{
+	"class" : {
+		"default" : "MasashiUmezawa 5/19/2015 17:24",
+		"initialize" : "MasashiUmezawa 5/19/2015 17:25",
+		"reset" : "MasashiUmezawa 5/19/2015 17:25" },
+	"instance" : {
+		"at:" : "MasashiUmezawa 5/19/2015 17:26",
+		"at:ifAbsent:" : "MasashiUmezawa 5/19/2015 17:26",
+		"at:ifAbsentPut:" : "MasashiUmezawa 5/19/2015 17:26",
+		"at:put:" : "MasashiUmezawa 5/19/2015 17:26",
+		"defaultPollerIntervalMilliseconds" : "MasashiUmezawa 6/8/2015 00:05",
+		"defaultPollerProcessPriority" : "MasashiUmezawa 6/7/2015 23:59",
+		"defaultReceiveProcessPriority" : "MasashiUmezawa 5/31/2015 00:43",
+		"defaultSendProcessPriority" : "MasashiUmezawa 5/31/2015 00:43",
+		"defaultTickMilliseconds" : "MasashiUmezawa 5/26/2015 00:25",
+		"errorReportLevel" : "MasashiUmezawa 6/1/2015 22:17",
+		"errorReportLevel:" : "MasashiUmezawa 6/1/2015 22:18",
+		"includesKey:" : "MasashiUmezawa 5/19/2015 17:26",
+		"initialize" : "MasashiUmezawa 5/19/2015 17:25",
+		"keys" : "MasashiUmezawa 5/19/2015 17:26",
+		"settingsDict" : "MasashiUmezawa 5/19/2015 17:23" } }

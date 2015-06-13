@@ -1,0 +1,16 @@
+{
+	"class" : {
+		"id:kind:addressString:socket:" : "MasashiUmezawa 5/19/2015 16:13" },
+	"instance" : {
+		"=" : "MasashiUmezawa 5/19/2015 16:25",
+		"addressString" : "MasashiUmezawa 5/19/2015 16:12",
+		"addressString:" : "MasashiUmezawa 5/19/2015 16:12",
+		"hash" : "MasashiUmezawa 5/19/2015 16:27",
+		"id" : "MasashiUmezawa 5/19/2015 15:49",
+		"id:" : "MasashiUmezawa 5/19/2015 15:49",
+		"kind" : "MasashiUmezawa 5/19/2015 16:12",
+		"kind:" : "MasashiUmezawa 5/19/2015 16:12",
+		"printOn:" : "MasashiUmezawa 5/19/2015 16:30",
+		"shutdown" : "MasashiUmezawa 5/19/2015 16:01",
+		"socket" : "MasashiUmezawa 5/19/2015 15:49",
+		"socket:" : "MasashiUmezawa 5/19/2015 15:49" } }

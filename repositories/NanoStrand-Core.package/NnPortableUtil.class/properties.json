@@ -1,0 +1,15 @@
+{
+	"category" : "NanoStrand-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		"Default",
+		"DialectSpecificClass" ],
+	"commentStamp" : "",
+	"instvars" : [
+		"ffi" ],
+	"name" : "NnPortableUtil",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

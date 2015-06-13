@@ -1,0 +1,14 @@
+{
+	"class" : {
+		"fieldsDesc" : "MasashiUmezawa 5/16/2015 00:12",
+		"forCheckReceive:" : "MasashiUmezawa 6/8/2015 00:52",
+		"forCheckSend:" : "MasashiUmezawa 6/8/2015 00:52",
+		"forCheckSendReceive:" : "MasashiUmezawa 6/8/2015 00:52",
+		"initialize" : "MasashiUmezawa 6/7/2015 23:39",
+		"nnPollIn" : "MasashiUmezawa 5/16/2015 00:35",
+		"nnPollOut" : "MasashiUmezawa 5/16/2015 00:35" },
+	"instance" : {
+		"canReceive" : "MasashiUmezawa 6/10/2015 22:31",
+		"canSend" : "MasashiUmezawa 5/27/2015 23:13",
+		"canSendReceive" : "MasashiUmezawa 6/9/2015 01:47",
+		"ignorable" : "MasashiUmezawa 6/11/2015 00:11" } }

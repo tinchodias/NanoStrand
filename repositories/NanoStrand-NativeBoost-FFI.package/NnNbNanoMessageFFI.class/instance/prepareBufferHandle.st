@@ -1,0 +1,3 @@
+private
+prepareBufferHandle
+	^NBExternalAddress new.
