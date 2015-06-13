@@ -50,9 +50,9 @@ sock1 := NnPullSocket withBind: 'tcp://*:5575'.sock1 onReceiveReady: [:sock | T
 
 ```Smalltalk
 [[
-received := OrderedCollection new. "Message box"
+received := OrderedCollection new. "A message box"
 
-"Setup PULL socket"sock1 := NnPullSocket withBind: 'tcp://127.0.0.1:5585'.sock1 onReceiveReady: [:sock | | rec |	rec := (sock receiveFor: 200 timeoutDo: ['']) asString.	rec ifNotEmpty: [		received add: rec. "Add messaged"		Transcript cr; show: 'Received:', rec, ':', Time now printString].]."Setup PUB socket"sock2 := NnPubSocket withBind: 'tcp://127.0.0.1:5586'.sock2 onSendReady: [:sock | |rem |	rem := received size rem: 10. "Compute the rem:10 of the messages."
+"Setup PULL socket"sock1 := NnPullSocket withBind: 'tcp://127.0.0.1:5585'.sock1 onReceiveReady: [:sock | | rec |	rec := (sock receiveFor: 200 timeoutDo: ['']) asString.	rec ifNotEmpty: [		received add: rec. "Stock the received message"		Transcript cr; show: 'Received:', rec, ':', Time now printString].]."Setup PUB socket"sock2 := NnPubSocket withBind: 'tcp://127.0.0.1:5586'.sock2 onSendReady: [:sock | |rem |	rem := received size rem: 10. "Compute the rem:10 of the messages."
 	
 	"If rem is 0 or 5, publish the events."	rem = 0 ifTrue: [sock send: 'Evt:Rem0:', Time now printString].	rem = 5 ifTrue: [sock send: 'Evt:Rem5:', Time now printString].].poller := NnPoller new.poller startWithSockets: {sock1. sock2}.30 seconds wait. "The demo server ends after 30 seconds. So, be quick!"] ensure: [poller stopAndCloseSockets.]] fork.
 
@@ -81,5 +81,5 @@ Subscribes to 'Event:Rem0' only.
 $ nanocat --sub --connect tcp://127.0.0.1:5586 --subscribe Evt:Rem0 -A
 ```
 
-Now you can see that after Client 1's messages are stocked on server, Rem0 & Rem5 events will be delivered to Clients 2, and Rem0 event will be delivered to Client 3.
+Now you can see that after Client 1's messages are stocked on server, Rem0 & Rem5 events will be delivered to Clients 2, and Rem0 events will be delivered to Client 3.
 
