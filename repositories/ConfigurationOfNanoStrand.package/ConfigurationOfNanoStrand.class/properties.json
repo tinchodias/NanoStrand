@@ -1,0 +1,14 @@
+{
+	"category" : "ConfigurationOfNanoStrand",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		"LastVersionLoad" ],
+	"commentStamp" : "",
+	"instvars" : [
+		"project" ],
+	"name" : "ConfigurationOfNanoStrand",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

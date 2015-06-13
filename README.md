@@ -1,6 +1,8 @@
 # NanoStrand
 Smalltalk bindings for [nanomsg](http://nanomsg.org).
 
+
+##Overview
 nanomsg is a simple, fast socket abstraction library that supports many communication patterns ("scalability protocols").
 
 NanoStrand is a gate to the nanomsg world for Smalltalk users. Since there are many language-bindings for nanomsg, integrations with other network programs would be much simpler via NanoStrand.
@@ -14,5 +16,24 @@ Currently NativeBoost is used for FFI, so the main target is Pharo Smalltalk. Bu
 
 For MCZ packages, visit <a href="http://smalltalkhub.com/#!/~MasashiUmezawa/NanoStrand">SmalltalkHub NanoStrand site</a>.
 
-Please see wikis for usages.
 
+##Installation
+- Download and compile nanomsg.
+	
+	Please see [the instruction](http://nanomsg.org/download.html) in nanomsg site. 
+
+- Put the nanomsg shared library (so, dll, or dylib) to VM directory.
+
+- Load NanoStrand to Pharo.
+
+```Smalltalk
+Gofer new
+      url: 'http://smalltalkhub.com/mc/MasashiUmezawa/NanoStrand/main';
+      package: 'ConfigurationOfNanoStrand';
+      load.
+(Smalltalk at: #ConfigurationOfNanoStrand) load
+```
+
+##Usage
+
+Please see wikis for usages.
