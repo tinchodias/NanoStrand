@@ -1,6 +1,7 @@
 retrieving constants
 retrieveConstantDictionary
 	| idx dict assoc |
+	self initialize.
 	idx := 0.
 	dict := Dictionary new.
 	[assoc := self getConstantAssociationAt: idx.

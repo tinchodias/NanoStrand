@@ -9,6 +9,6 @@ version01: spec
 		spec timestamp: '6/13/2015 23:30'.
 		spec 
 			package: #'NanoStrand-Core' with: 'NanoStrand-Core-MasashiUmezawa.76';
-			package: #'NanoStrand-NativeBoost-FFI' with: 'NanoStrand-NativeBoost-FFI-MasashiUmezawa.24';
+			package: #'NanoStrand-NativeBoost-FFI' with: 'NanoStrand-NativeBoost-FFI-MasashiUmezawa.25';
 			package: #'NanoStrand-Pharo-Core' with: 'NanoStrand-Pharo-Core-MasashiUmezawa.1';
 			package: #'NanoStrand-Tests' with: 'NanoStrand-Tests-MasashiUmezawa.28'. ].
