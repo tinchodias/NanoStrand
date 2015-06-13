@@ -34,6 +34,52 @@ Gofer new
 (Smalltalk at: #ConfigurationOfNanoStrand) load
 ```
 
-##Usage
+##Examples
 
-Please see wikis for usages.
+###Simple PULL / PUSH on one node
+```Smalltalk
+[[
+"Setup PULL socket"
+sock1 := NnPullSocket withBind: 'tcp://*:5575'.sock1 onReceiveReady: [:sock | Transcript cr; show: '#PULL: ', sock receive asString]."Setup PUSH socket"sock2 := NnPushSocket withConnect: 'tcp://127.0.0.1:5575'.sock2 onSendReady: [:sock | sock send: '#PUSH: ', Time now printString]."Start a Poller for multiplexing"poller := NnPoller startWithSockets: {sock1. sock2}.1 seconds wait. "The process ends after a second"] ensure: [poller stopAndCloseSockets.]] fork.
+```
+
+###PULL + PUB server connected with PUSH / SUB multi clients
+
+####Server - PULL + PUB
+ This Smalltalk server pulls the messages from clients and pushes 'rem' events.
+
+```Smalltalk
+[[
+received := OrderedCollection new. "Message box"
+
+"Setup PULL socket"sock1 := NnPullSocket withBind: 'tcp://127.0.0.1:5585'.sock1 onReceiveReady: [:sock | | rec |	rec := (sock receiveFor: 200 timeoutDo: ['']) asString.	rec ifNotEmpty: [		received add: rec. "Add messaged"		Transcript cr; show: 'Received:', rec, ':', Time now printString].]."Setup PUB socket"sock2 := NnPubSocket withBind: 'tcp://127.0.0.1:5586'.sock2 onSendReady: [:sock | |rem |	rem := received size rem: 10. "Compute the rem:10 of the messages."
+	
+	"If rem is 0 or 5, publish the events."	rem = 0 ifTrue: [sock send: 'Evt:Rem0:', Time now printString].	rem = 5 ifTrue: [sock send: 'Evt:Rem5:', Time now printString].].poller := NnPoller new.poller startWithSockets: {sock1. sock2}.30 seconds wait. "The demo server ends after 30 seconds. So, be quick!"] ensure: [poller stopAndCloseSockets.]] fork.
+
+```
+
+For clients, we use [nanocat](http://nanomsg.org/v0.5/nanocat.1.html). An official command line client of nanomsg (in C).
+
+####Client 1 - PUSH
+Pushes "HelloWorld" messages periodically.
+
+```
+$ nanocat --push --connect tcp://127.0.0.1:5585 --data HelloWorld -i 1
+```
+
+####Client 2 - SUB
+Subscribes to all events.
+
+```
+$ nanocat --sub --connect tcp://127.0.0.1:5586 -A
+```
+
+####Client 3 - SUB
+Subscribes to 'Event:Rem0' only.
+
+```
+$ nanocat --sub --connect tcp://127.0.0.1:5586 --subscribe Evt:Rem0 -A
+```
+
+Now you can see that after Client 1's messages are stocked on server, Rem0 & Rem5 events will be delivered to Clients 2, and Rem0 event will be delivered to Client 3.
+
