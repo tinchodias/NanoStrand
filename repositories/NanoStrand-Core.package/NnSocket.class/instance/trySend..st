@@ -7,7 +7,7 @@ trySend: bytes
 	].
 	ret = -1 ifTrue: [^ffi getErrorNumber].
 	ret = bytes size ifFalse: [
-		self signalError: #trySend:sized: otherInfo: {'supposed size'->ret, 'sent size'->bytes size} asDictionary.
+		self signalError: #trySend: otherInfo: {'supposed size'->ret, 'sent size'->bytes size} asDictionary.
 		^0
 	].
 	^self "success"
