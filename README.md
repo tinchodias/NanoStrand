@@ -40,8 +40,24 @@ Gofer new
 ```Smalltalk
 [[
 "Setup PULL socket"
-sock1 := NnPullSocket withBind: 'tcp://*:5575'.sock1 onReceiveReady: [:sock | Transcript cr; show: '#PULL: ', sock receive asString]."Setup PUSH socket"sock2 := NnPushSocket withConnect: 'tcp://127.0.0.1:5575'.sock2 onSendReady: [:sock | sock send: '#PUSH: ', Time now printString]."Start a Poller for multiplexing"poller := NnPoller startWithSockets: {sock1. sock2}.1 seconds wait. "The process ends after a second"] ensure: [poller stopAndCloseSockets.]] fork.
+sock1 := NnPullSocket withBind: 'tcp://*:5575'.sock1 onReceiveReady: [:sock | Transcript cr; show: '#PULL: ', sock receive asString]."Setup PUSH socket"sock2 := NnPushSocket withConnect: 'tcp://127.0.0.1:5575'.sock2 onSendReady: [:sock | sock send: '#PUSH: ', Time now asString]."Start a Poller for multiplexing"poller := NnPoller startWithSockets: {sock1. sock2}.1 seconds wait. "The process ends after a second"] ensure: [poller stopAndCloseSockets.]] fork.
 ```
+
+Let's try changing the source to accumulate the result to an OrderedCollection:
+
+```
+"Setup PULL socket"ord := OrderedCollection new.sock1 := NnPullSocket withBind: 'tcp://*:5575'.sock1 onReceiveReady: [:sock | ord add: (sock receive asString)].
+``` 
+
+After running the program, we can see how many messages were processed.
+
+```
+"print it"
+ord size => "22852"
+```
+
+22852 messages per second on my MBA! It is pretty fast.
+
 
 ###PULL + PUB server connected with PUSH / SUB multi clients
 
