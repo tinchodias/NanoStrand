@@ -45,15 +45,15 @@ sock1 := NnPullSocket withBind: 'tcp://*:5575'.sock1 onReceiveReady: [:sock | T
 
 Let's try changing the source to accumulate the result to an OrderedCollection:
 
-```
+```Smalltalk
 "Setup PULL socket"ord := OrderedCollection new.sock1 := NnPullSocket withBind: 'tcp://*:5575'.sock1 onReceiveReady: [:sock | ord add: (sock receive asString)].
 ``` 
 
 After running the program, we can see how many messages were processed.
 
-```
+```Smalltalk
 "print it"
-ord size => "22852"
+ord size. "=> 22852"
 ```
 
 22852 messages per second on my MBA! It is pretty fast.
