@@ -20,9 +20,9 @@ For MCZ packages, visit <a href="http://smalltalkhub.com/#!/~MasashiUmezawa/Nano
 ##Installation
 - Download and compile nanomsg.
 	
-	Please see [the instruction](http://nanomsg.org/download.html) in nanomsg site. 
+	Please see [the instruction](http://nanomsg.org/download.html) in nanomsg site. You'll need 32-bit option (CFLAGS=-m32), if you use 32-bit Cog VM.
 
-- Put the nanomsg shared library (so, dll, or dylib) to VM directory.
+- Put the nanomsg shared library (so, dll, or dylib) to the VM directory.
 
 - Load NanoStrand to Pharo.
 
