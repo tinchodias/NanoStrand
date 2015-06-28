@@ -1,4 +1,4 @@
 private
 waitFor: msecs
 	msecs = 0 ifTrue: [^self].
-	(Delay forMilliseconds: msecs) wait
+	self portableUtil waitMilliseconds: msecs
