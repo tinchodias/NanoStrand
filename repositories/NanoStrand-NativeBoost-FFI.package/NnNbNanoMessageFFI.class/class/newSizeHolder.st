@@ -1,3 +1,0 @@
-factory
-newSizeHolder
-	^SizeHolderType new

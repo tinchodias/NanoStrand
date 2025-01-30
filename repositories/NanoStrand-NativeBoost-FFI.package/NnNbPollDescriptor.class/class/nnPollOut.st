@@ -1,3 +1,0 @@
-constants
-nnPollOut
-	^2

@@ -1,3 +1,0 @@
-constants
-nnPollIn
-	^1
