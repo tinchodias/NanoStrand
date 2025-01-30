@@ -1,15 +1,16 @@
 {
+	"commentStamp" : "",
+	"super" : "Object",
 	"category" : "NanoStrand-Core",
-	"classinstvars" : [
-		 ],
+	"classinstvars" : [ ],
+	"pools" : [ ],
 	"classvars" : [
 		"Default",
-		"DialectSpecificClass" ],
-	"commentStamp" : "",
+		"DialectSpecificClass"
+	],
 	"instvars" : [
-		"ffi" ],
+		"ffi"
+	],
 	"name" : "NnPortableUtil",
-	"pools" : [
-		 ],
-	"super" : "Object",
-	"type" : "normal" }
+	"type" : "normal"
+}

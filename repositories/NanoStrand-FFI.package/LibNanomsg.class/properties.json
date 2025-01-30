@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "FFILibrary",
+	"category" : "NanoStrand-FFI",
+	"classinstvars" : [ ],
+	"pools" : [
+		"NnNanomsgTypedef"
+	],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "LibNanomsg",
+	"type" : "normal"
+}

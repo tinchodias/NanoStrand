@@ -1,0 +1,20 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "NanoStrand-FFI",
+	"classinstvars" : [ ],
+	"pools" : [
+		"NnNbNanoMessageConstants"
+	],
+	"classvars" : [
+		"IntHolderType",
+		"IntSize",
+		"PollDescriptorArrayType",
+		"SizeHolderType",
+		"StringHolderType",
+		"TypeMap"
+	],
+	"instvars" : [ ],
+	"name" : "NnNbNanoMessageFFI",
+	"type" : "normal"
+}

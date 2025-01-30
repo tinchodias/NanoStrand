@@ -1,0 +1,3 @@
+actions
+getErrorNumber
+	^self nnGetErrorNumber

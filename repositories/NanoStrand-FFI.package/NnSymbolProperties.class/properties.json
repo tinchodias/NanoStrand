@@ -1,0 +1,17 @@
+{
+	"commentStamp" : "",
+	"super" : "NnStructure",
+	"category" : "NanoStrand-FFI",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [
+		"OFFSET_NAME",
+		"OFFSET_NS",
+		"OFFSET_TYPE",
+		"OFFSET_UNIT",
+		"OFFSET_VALUE"
+	],
+	"instvars" : [ ],
+	"name" : "NnSymbolProperties",
+	"type" : "normal"
+}

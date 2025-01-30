@@ -1,10 +1,12 @@
 {
+	"commentStamp" : "",
+	"super" : "Object",
 	"category" : "NanoStrand-Core",
 	"classinstvars" : [
-		"logger" ],
-	"classvars" : [
-		 ],
-	"commentStamp" : "",
+		"logger"
+	],
+	"pools" : [ ],
+	"classvars" : [ ],
 	"instvars" : [
 		"ffi",
 		"descriptor",
@@ -15,9 +17,8 @@
 		"receiveProcessPriority",
 		"sendReadyBlock",
 		"receiveReadyBlock",
-		"sendReceiveReadyBlock" ],
+		"sendReceiveReadyBlock"
+	],
 	"name" : "NnSocket",
-	"pools" : [
-		 ],
-	"super" : "Object",
-	"type" : "normal" }
+	"type" : "normal"
+}

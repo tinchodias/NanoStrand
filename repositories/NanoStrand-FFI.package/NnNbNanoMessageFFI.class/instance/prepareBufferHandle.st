@@ -1,0 +1,4 @@
+private
+prepareBufferHandle
+
+	^ ExternalAddress new

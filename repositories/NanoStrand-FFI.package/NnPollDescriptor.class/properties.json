@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "",
+	"super" : "NnStructure",
+	"category" : "NanoStrand-FFI",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [
+		"OFFSET_EVENTS",
+		"OFFSET_FD",
+		"OFFSET_REVENTS"
+	],
+	"instvars" : [ ],
+	"name" : "NnPollDescriptor",
+	"type" : "normal"
+}

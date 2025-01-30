@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "",
+	"super" : "NnStructure",
+	"category" : "NanoStrand-FFI",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [
+		"OFFSET_CMSG_LEN",
+		"OFFSET_CMSG_LEVEL",
+		"OFFSET_CMSG_TYPE"
+	],
+	"instvars" : [ ],
+	"name" : "NnCMsgHeader",
+	"type" : "normal"
+}

@@ -1,10 +1,10 @@
 {
-	"category" : "NanoStrand-Core",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "NanoStrand-Core",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
 	"instvars" : [
 		"ffi",
 		"settings",
@@ -13,9 +13,8 @@
 		"sockets",
 		"process",
 		"priority",
-		"intervalMilliseconds" ],
+		"intervalMilliseconds"
+	],
 	"name" : "NnPoller",
-	"pools" : [
-		 ],
-	"super" : "Object",
-	"type" : "normal" }
+	"type" : "normal"
+}

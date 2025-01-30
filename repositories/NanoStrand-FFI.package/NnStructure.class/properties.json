@@ -1,0 +1,15 @@
+{
+	"classtraitcomposition" : "LibTNanomsg classTrait",
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "NnStructure",
+	"commentStamp" : "",
+	"super" : "FFIStructure",
+	"traitcomposition" : "LibTNanomsg",
+	"type" : "normal",
+	"classinstvars" : [ ],
+	"pools" : [
+		"NnNanomsgTypedef"
+	],
+	"category" : "NanoStrand-FFI"
+}

@@ -1,1 +1,1 @@
-SystemOrganization addCategory: #'NanoStrand-Core'!
+self packageOrganizer ensurePackage: #'NanoStrand-Core' withTags: #()!

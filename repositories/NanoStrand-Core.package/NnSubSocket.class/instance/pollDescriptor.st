@@ -1,3 +1,3 @@
 accessing
 pollDescriptor
-	^NnNbPollDescriptor forCheckSend: self
+	^NnPollDescriptor forCheckSend: self

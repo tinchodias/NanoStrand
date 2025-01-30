@@ -1,17 +1,16 @@
 {
-	"category" : "NanoStrand-Core",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "",
+	"super" : "Error",
+	"category" : "NanoStrand-Core",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
 	"instvars" : [
 		"code",
 		"kind",
 		"errorString",
-		"otherInfo" ],
+		"otherInfo"
+	],
 	"name" : "NnError",
-	"pools" : [
-		 ],
-	"super" : "Error",
-	"type" : "normal" }
+	"type" : "normal"
+}

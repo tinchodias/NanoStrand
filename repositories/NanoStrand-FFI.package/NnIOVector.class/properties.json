@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "NnStructure",
+	"category" : "NanoStrand-FFI",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [
+		"OFFSET_IOV_BASE",
+		"OFFSET_IOV_LEN"
+	],
+	"instvars" : [ ],
+	"name" : "NnIOVector",
+	"type" : "normal"
+}

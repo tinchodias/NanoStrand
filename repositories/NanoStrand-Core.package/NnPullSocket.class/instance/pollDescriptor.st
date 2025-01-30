@@ -1,4 +1,4 @@
 accessing
 pollDescriptor
 	"override"
-	^NnNbPollDescriptor forCheckReceive: self
+	^NnPollDescriptor forCheckReceive: self

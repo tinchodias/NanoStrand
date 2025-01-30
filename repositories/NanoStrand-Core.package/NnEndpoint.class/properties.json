@@ -1,17 +1,16 @@
 {
-	"category" : "NanoStrand-Core",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "NanoStrand-Core",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
 	"instvars" : [
 		"id",
 		"addressString",
 		"kind",
-		"socket" ],
+		"socket"
+	],
 	"name" : "NnEndpoint",
-	"pools" : [
-		 ],
-	"super" : "Object",
-	"type" : "normal" }
+	"type" : "normal"
+}
