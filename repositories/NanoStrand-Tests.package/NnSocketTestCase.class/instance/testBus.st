@@ -48,8 +48,8 @@ testBus
 	self assert: (received3 allButFirst allSatisfy: [:each | (each beginsWith: 'bus1-') or: [each beginsWith: 'bus2-']]).
 		
 	] ensure: [
-		bus1 close.
-		bus2 close.
-		bus3 close.
+		bus1 ifNotNil: [ bus1 close ].
+		bus2 ifNotNil: [ bus2 close ].
+		bus3 ifNotNil: [ bus3 close ].
 	]
 	

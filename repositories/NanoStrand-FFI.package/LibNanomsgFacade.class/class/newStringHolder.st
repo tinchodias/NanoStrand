@@ -1,0 +1,4 @@
+factory
+newStringHolder
+
+	^ StringHolderType new

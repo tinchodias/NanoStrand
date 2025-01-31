@@ -1,0 +1,29 @@
+{
+	"commentStamp" : "",
+	"super" : "SharedPool",
+	"category" : "NanoStrand-FFI",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [
+		"bool",
+		"int16_t",
+		"int32_t",
+		"int64_t",
+		"int8_t",
+		"nn_cmsghdr",
+		"nn_iovec",
+		"nn_msghdr",
+		"nn_pollfd",
+		"nn_symbol_properties",
+		"pid_t",
+		"time_t",
+		"uint16_t",
+		"uint32_t",
+		"uint64_t",
+		"uint8_t",
+		"uintptr_t"
+	],
+	"instvars" : [ ],
+	"name" : "NnTypedef",
+	"type" : "normal"
+}

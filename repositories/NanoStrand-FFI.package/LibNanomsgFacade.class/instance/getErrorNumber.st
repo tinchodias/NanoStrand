@@ -1,0 +1,4 @@
+actions
+getErrorNumber
+
+	^ self errno

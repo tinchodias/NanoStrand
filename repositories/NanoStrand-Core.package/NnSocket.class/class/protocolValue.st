@@ -1,3 +1,3 @@
 constants
 protocolValue
-	^ NnPortableUtil default constants @ self protocolSymbol
+	^ NnConstants @ self protocolSymbol

@@ -1,3 +1,4 @@
 accessing
 constants
-	^NnPortableUtil default constants
+
+	^ NnConstants

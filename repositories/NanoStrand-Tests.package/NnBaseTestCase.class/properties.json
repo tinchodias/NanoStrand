@@ -1,14 +1,13 @@
 {
-	"category" : "NanoStrand-Tests",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "",
-	"instvars" : [
-		"semaphore" ],
-	"name" : "NnBaseTestCase",
-	"pools" : [
-		 ],
 	"super" : "TestCase",
-	"type" : "normal" }
+	"category" : "NanoStrand-Tests",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"semaphore"
+	],
+	"name" : "NnBaseTestCase",
+	"type" : "normal"
+}

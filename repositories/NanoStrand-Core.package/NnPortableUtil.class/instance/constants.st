@@ -1,4 +1,0 @@
-accessing
-constants
-	"override"
-	^ nil

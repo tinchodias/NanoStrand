@@ -1,1 +1,1 @@
-SystemOrganization addCategory: #'NanoStrand-Tests'!
+self packageOrganizer ensurePackage: #'NanoStrand-Tests' withTags: #()!

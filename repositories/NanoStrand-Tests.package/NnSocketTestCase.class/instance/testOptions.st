@@ -28,6 +28,6 @@ testOptions
 	self assert: (sock1 tcpNoDelay).
 	self assert: (sock1 socketName = 'auau').
 	] ensure: [
-	sock1 close.
+	sock1 ifNotNil: [ sock1 close ].
 	]
 	

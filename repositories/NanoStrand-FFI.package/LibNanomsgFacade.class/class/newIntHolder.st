@@ -1,0 +1,4 @@
+factory
+newIntHolder
+
+	^ IntHolderType new

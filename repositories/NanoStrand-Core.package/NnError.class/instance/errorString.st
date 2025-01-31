@@ -1,4 +1,7 @@
 accessing
 errorString
-	code isNil ifTrue: [^''].
-	^ errorString ifNil: [errorString := NnPortableUtil default ffi getErrorStringAt: code].
+
+	code isNil ifTrue: [ ^ '' ].
+	^ errorString ifNil: [
+		errorString :=
+			LibNanomsgFacade uniqueInstance getErrorStringAt: code ]

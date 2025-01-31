@@ -1,0 +1,19 @@
+{
+	"commentStamp" : "",
+	"super" : "LibNanomsg",
+	"category" : "NanoStrand-FFI",
+	"classinstvars" : [ ],
+	"pools" : [
+		"NnConstants"
+	],
+	"classvars" : [
+		"IntHolderType",
+		"IntSize",
+		"PollDescriptorArrayType",
+		"SizeHolderType",
+		"StringHolderType"
+	],
+	"instvars" : [ ],
+	"name" : "LibNanomsgFacade",
+	"type" : "normal"
+}

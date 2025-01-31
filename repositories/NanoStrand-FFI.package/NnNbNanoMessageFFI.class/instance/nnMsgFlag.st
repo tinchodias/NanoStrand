@@ -1,3 +1,0 @@
-constants
-nnMsgFlag
-	^4294967295

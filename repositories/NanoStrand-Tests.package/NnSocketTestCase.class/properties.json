@@ -1,14 +1,11 @@
 {
-	"category" : "NanoStrand-Tests",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "",
-	"instvars" : [
-		 ],
-	"name" : "NnSocketTestCase",
-	"pools" : [
-		 ],
 	"super" : "NnBaseTestCase",
-	"type" : "normal" }
+	"category" : "NanoStrand-Tests",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "NnSocketTestCase",
+	"type" : "normal"
+}

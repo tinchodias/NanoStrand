@@ -1,3 +1,4 @@
 private
 done
-	semaphore ifNotNil: [:sema | sema signal].
+
+	semaphore ifNotNil: [ :sema | sema signal ]

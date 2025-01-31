@@ -4,7 +4,7 @@
 	"category" : "NanoStrand-FFI",
 	"classinstvars" : [ ],
 	"pools" : [
-		"NnNanomsgTypedef"
+		"NnTypedef"
 	],
 	"classvars" : [ ],
 	"instvars" : [ ],

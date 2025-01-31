@@ -1,0 +1,4 @@
+factory
+newSizeHolder
+
+	^ SizeHolderType new

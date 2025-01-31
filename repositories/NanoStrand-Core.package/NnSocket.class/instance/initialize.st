@@ -1,3 +1,5 @@
 initialize-release
 initialize
-	ffi := self portableUtil ffi
+
+	super initialize.
+	ffi := LibNanomsgFacade uniqueInstance
