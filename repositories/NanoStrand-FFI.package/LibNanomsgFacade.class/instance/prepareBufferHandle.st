@@ -1,4 +1,0 @@
-private
-prepareBufferHandle
-
-	^ ExternalAddress new

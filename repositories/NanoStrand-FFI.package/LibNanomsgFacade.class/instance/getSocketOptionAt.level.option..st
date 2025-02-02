@@ -9,7 +9,7 @@ getSocketOptionAt: descriptor level: level option: option
 		       getSockOptS: descriptor
 		       level: level
 		       option: option
-		       val: valPtr
-		       len: sizeHolder.
+		       val: valPtr tfPointerAddress
+		       len: sizeHolder tfPointerAddress.
 	ret = -1 ifTrue: [ ^ nil ].
 	^ valPtr int32AtOffset: 0

@@ -9,7 +9,7 @@ setSocketOption: option to: value at: descriptor level: level
 			  setSocketOptionAt: descriptor
 			  level: level
 			  option: option
-			  value: valuePointer
+			  value: valuePointer tfPointerAddress
 			  size: sz ].
 	value isString ifTrue: [
 		^ self

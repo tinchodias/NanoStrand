@@ -1,5 +1,9 @@
 class-initialization
 initialize
-	"NnNbNanoMessageFFI initialize"
 
-	self initializeTypeMap
+	IntHolderType := (FFIExternalValueHolder ofType: 'int').
+	StringHolderType := (FFIExternalValueHolder ofType: 'char*').
+	SizeHolderType := (FFIExternalValueHolder ofType: 'size_t').
+	PollDescriptorArrayType := (FFIExternalValueHolder ofType: NnPollDescriptor).
+
+	IntSize := FFIExternalType sizeOf: 'int'

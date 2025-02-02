@@ -10,6 +10,6 @@ getSocketOptionStringAt: descriptor level: level option: option
 		       level: level
 		       option: option
 		       val: valPtr
-		       len: sizeHolder.
+		       len: sizeHolder tfPointerAddress.
 	ret = -1 ifTrue: [ ^ nil ].
 	^ valPtr asString copyFrom: 1 to: sizeHolder value
