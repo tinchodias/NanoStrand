@@ -1,3 +1,4 @@
 accessing
 @ key
-	^self classPool at: key ifAbsent: []
+
+	^ self classPool at: key ifAbsent: [  ]
