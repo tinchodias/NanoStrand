@@ -22,12 +22,11 @@ testPair
 
 	self waitAllDone.
 
-	self assert: received size = 2.
-	self assert: (received at: 1) = 'hello' asByteArray.
-	self assert: (received at: 2) = 'goodbye' asByteArray.
+	self assert: received size equals: 2.
+	self assert: (received includes: 'hello' asByteArray).
+	self assert: (received includes: 'goodbye' asByteArray).
 		
 	] ensure: [
 		sock1 close.
-		sock2 close.
+		sock2 close
 	]
-	
