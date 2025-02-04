@@ -1,4 +1,6 @@
 options
 lingerMilliseconds: msecs
-	"Specifies how long the socket should try to send pending outbound messages after nn_close() have been called, in milliseconds. Negative value means infinite linger. The type of the option is int. Default value is 1000 (1 second)."
-	^self optionAt: self constants @ #NN_LINGER put: msecs
+	"Set NN_LINGER. IMPORTANT: This option is not implemented, and should not be used in new code. Applications which need to be sure that their messages are delivered to a remote peer should either use an acknowledgement (implied when receiving a reply on NN_REQ sockets), or insert a suitable delay before calling nn_close(3) or exiting the application.
+	See: https://nanomsg.org/v1.1.5/nn_setsockopt.html"
+
+	^ self optionAt: self constants @ #NN_LINGER put: msecs
