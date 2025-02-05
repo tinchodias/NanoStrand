@@ -1,3 +1,4 @@
 start/stop
 stop
-	shouldPoll := false.
+
+	shouldPoll := false

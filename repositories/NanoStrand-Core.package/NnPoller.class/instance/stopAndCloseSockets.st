@@ -1,4 +1,5 @@
 actions
 stopAndCloseSockets
+
 	self stop.
-	[self closeSockets] forkAt: Processor userBackgroundPriority 
+	[ self closeSockets ] forkAt: Processor userBackgroundPriority

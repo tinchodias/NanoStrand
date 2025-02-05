@@ -9,7 +9,6 @@
 	"classvars" : [
 		"IntHolderType",
 		"IntSize",
-		"PollDescriptorArrayType",
 		"SizeHolderType",
 		"StringHolderType"
 	],

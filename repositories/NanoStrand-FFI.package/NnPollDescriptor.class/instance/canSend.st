@@ -1,3 +1,4 @@
 testing
 canSend
-	^(self revents bitAnd: self class nnPollOut) > 0
+
+	^ (self revents bitAnd: NN_POLLOUT) > 0

@@ -1,4 +1,5 @@
 initialization-release
 release
-	self isRunning ifTrue: [self stop].
-	pollDescriptorArray ifNotNil: [pollDescriptorArray free]
+
+	self isRunning ifTrue: [ self stop ].
+	pollDescriptorArray ifNotNil: [ pollDescriptorArray free ]

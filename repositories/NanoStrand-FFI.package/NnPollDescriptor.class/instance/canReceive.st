@@ -1,3 +1,4 @@
 testing
 canReceive
-	^(self revents bitAnd: self class nnPollIn) > 0
+
+	^ (self revents bitAnd: NN_POLLIN) > 0

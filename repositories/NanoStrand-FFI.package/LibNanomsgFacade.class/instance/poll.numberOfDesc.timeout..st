@@ -2,6 +2,6 @@ actions
 poll: pollDescriptorArray numberOfDesc: nfds timeout: timeoutMsecs
 
 	^ self
-		  pollFds: pollDescriptorArray address
+		  pollFds: pollDescriptorArray
 		  nfds: nfds
 		  timeout: timeoutMsecs

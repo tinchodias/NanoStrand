@@ -1,4 +1,4 @@
 actions
 closeSockets
-	^self sockets do: [:each | each close]
-	
+
+	^ sockets do: [ :each | each close ]

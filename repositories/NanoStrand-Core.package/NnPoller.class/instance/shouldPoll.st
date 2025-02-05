@@ -1,3 +1,4 @@
 accessing
 shouldPoll
-	^ shouldPoll ifNil: [shouldPoll := false]
+
+	^ shouldPoll ifNil: [ shouldPoll := false ]

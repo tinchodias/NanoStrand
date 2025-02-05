@@ -1,3 +1,5 @@
 accessing
 priority
-	^ priority ifNil: [priority := self settings defaultPollerProcessPriority]
+
+	^ priority ifNil: [
+		  priority := self settings defaultPollerProcessPriority ]

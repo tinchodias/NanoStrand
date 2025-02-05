@@ -1,3 +1,4 @@
 accessing
 settings
-	^settings ifNil: [settings := NnSettings default]
+
+	^ settings ifNil: [ settings := NnSettings default ]

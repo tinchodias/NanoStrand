@@ -1,9 +1,8 @@
 actions
 poll
+
 	| arr |
-	arr := self pollDescriptorArray.
+	arr := pollDescriptorArray.
 	ffi poll: arr timeout: self intervalMilliseconds.
-	
-	arr do: [:eachPollDesc |
-		self pollEach: eachPollDesc
-	]
+
+	arr do: [ :each | self pollEach: each ]

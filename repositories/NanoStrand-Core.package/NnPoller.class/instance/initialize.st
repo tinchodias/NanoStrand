@@ -1,4 +1,5 @@
 initialization-release
 initialize
 
-	ffi := LibNanomsgFacade uniqueInstance
+	ffi := LibNanomsgFacade uniqueInstance.
+	sockets := Dictionary new

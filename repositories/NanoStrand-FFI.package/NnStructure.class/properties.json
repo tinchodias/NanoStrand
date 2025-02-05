@@ -9,6 +9,7 @@
 	"type" : "normal",
 	"classinstvars" : [ ],
 	"pools" : [
+		"NnConstants",
 		"NnTypedef"
 	],
 	"category" : "NanoStrand-FFI"
